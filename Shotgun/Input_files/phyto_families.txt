@@ -1,0 +1,67 @@
+group	family
+phototrophic protists	Acanthocerataceae
+phototrophic protists	Amphipleuraceae
+phototrophic protists	Anaulaceae
+phototrophic protists	Attheyaceae
+phototrophic protists	Bacillariaceae
+phototrophic protists	Biddulphiaceae
+phototrophic protists	Chaetocerotaceae
+phototrophic protists	Coscinodiscaceae
+phototrophic protists	Cymatosiraceae
+phototrophic protists	Entomoneidaceae
+phototrophic protists	Eunotiaceae
+phototrophic protists	Fragilariaceae
+phototrophic protists	Gomphonemataceae
+phototrophic protists	Hemiaulaceae
+phototrophic protists	Leptocylindraceae
+phototrophic protists	Lithodesmiaceae
+phototrophic protists	Naviculaceae
+phototrophic protists	Phaeodactylaceae
+phototrophic protists	Plagiogrammaceae
+phototrophic protists	Rhizosoleniaceae
+phototrophic protists	Skeletonemataceae
+phototrophic protists	Stephanodiscaceae
+phototrophic protists	Thalassiosiraceae
+phototrophic protists	Toxariaceae
+phototrophic protists	Triceratiaceae
+phototrophic protists	Ulnariaceae
+red algae	Cyanidiaceae
+phototrophic bacteria	Chlorobiaceae
+phototrophic bacteria	Chloroflexaceae
+phototrophic bacteria	Roseiflexaceae
+chlorophytes	Chlamydomonadaceae
+chlorophytes	Chloropicaceae
+phototrophic bacteria	Heliobacteriaceae
+phototrophic protists	Geminigeraceae
+phototrophic protists	Triparmaceae
+phototrophic bacteria	Acaryochloridaceae
+phototrophic bacteria	Aphanizomenonaceae
+phototrophic bacteria	Aphanothecaceae
+phototrophic bacteria	Calotrichaceae
+phototrophic bacteria	Chroococcaceae
+phototrophic bacteria	Chroococcidiopsidaceae
+phototrophic bacteria	Dermocarpellaceae
+phototrophic bacteria	Gloeobacteraceae
+phototrophic bacteria	Gomontiellaceae
+phototrophic bacteria	Hapalosiphonaceae
+phototrophic bacteria	Leptolyngbyaceae
+phototrophic bacteria	Microcoleaceae
+phototrophic bacteria	Nostocaceae
+phototrophic bacteria	Oscillatoriaceae
+phototrophic bacteria	Prochloraceae
+phototrophic bacteria	Pseudanabaenaceae
+phototrophic bacteria	Rivulariaceae
+phototrophic bacteria	Scytonemataceae
+phototrophic bacteria	Synechococcaceae
+phototrophic protists	Gymnodiniaceae
+phototrophic protists	Kryptoperidiniaceae
+phototrophic protists	Syndiniaceae
+phototrophic protists	Monodopsidaceae
+phototrophic protists	Staurosiraceae
+phototrophic protists	Paulinellidae
+chlorophytes	Bathycoccaceae
+chlorophytes	Mamiellaceae
+phototrophic protists	Noelaerhabdaceae
+phototrophic protists	Phaeocystaceae
+chlorophytes	Pycnococcaceae
+chlorophytes	Chlorellaceae
