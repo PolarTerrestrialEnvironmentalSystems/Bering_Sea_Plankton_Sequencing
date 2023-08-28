@@ -677,9 +677,9 @@ str(famdf)
 write.xlsx(famdf, "Output/05_Rarefaction/Rarefaction_Diatoms_ASVsCI95.xlsx")
 
 
-#############################################
-###       MEAN FAMILIES PER SAMPLE        ###
-#############################################
+#########################################
+###       MEAN ASVs PER SAMPLE        ###
+#########################################
 
 rm(list = ls())
 
@@ -708,9 +708,9 @@ colnames(nasv_mean) <- c("age", "NASVs_mean")
 write.xlsx(nasv_mean, file = "Output/05_Rarefaction/Rarefaction_Diatoms_ASVsPerSample_mean.xlsx")
 
 
-#############################################
-###   MEAN COUNTS PER SAMPLE AND FAMILY   ###
-#############################################
+##########################################
+###   MEAN COUNTS PER ASV AND FAMILY   ###
+##########################################
 
 rm(list = ls())
 
