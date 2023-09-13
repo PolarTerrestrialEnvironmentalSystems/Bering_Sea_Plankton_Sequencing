@@ -1,0 +1,17 @@
+preProcess=0 
+alignment=1 
+dupRemOff=0 
+filter=def_anc 
+index=/path/to/database/nt-hops-20-11-03_step8/
+pathToList=/path/to/working/directory/taxalist_2022_10_20.txt
+resources=/path/to/database/ncbi
+
+useSlurm = 0
+threadsMalt=28
+maxMemoryMalt=1400
+
+threadsMaltEx=28
+maxMemoryMaltEx=1400
+
+threadsPost=28
+maxMemoryPost=256
