@@ -34,7 +34,7 @@ On the quality checked and deduplicated dataset, the Kraken2 script `2_step_shop
 
 ```
 # change directory to the path where the database is stores
-DB="/path/to//nt_2021_04_db"
+DB="/path/to/nt_2021_04_db"
 ```
 
 The output directory will stay the same to the output directory for the script `1_step_shop_Bering_with_clumpify.sl`.
