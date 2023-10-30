@@ -116,7 +116,8 @@ The folder `input_files` contains the following files: <br>
 |file name|description|
 |-|-|
 |Age_Period_Group.xlsx|table that assigns sample ages to a period (Holocene, Youger Dryas, Bollong-Allerod, Last Glacial Maximum, Glacial period, Eemian)|
-|Group_infos_phyto.xlsx|table assigning the plankton families to broader taxonomic groups (chlorophyes, phototrophic bacteria, phototrophic protsits, red algae)|
+|Group_infos_phyto.xlsx|table assigning the phytoplankton families to broader taxonomic groups (chlorophyes, phototrophic bacteria, phototrophic protsits, red algae)|
+|Group_infos_zoo.xlsx|table assigning the zooplankton families to broader taxonomic groups (crustaceous zooplankton, gelatinous zooplankton, heterotrophic protsits)|
 |KL-77-1_nt0.2_lineageDB_age_depth_adj.xlsx|Kraken2 Output of the first batch sent to sequencing|
 |KL77-2_nt0.2_lineageDB_age_depth_adj.xlsx|Kraken2 Output of the first batch sent to sequencing|
 |NGRIP_data.xlsx|d18O NGRIP data from [Rasmussen et al. 2006](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2005JD006079)|
