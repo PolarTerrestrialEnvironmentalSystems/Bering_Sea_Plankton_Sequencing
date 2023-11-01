@@ -5,10 +5,10 @@ Buchwald, S. Z., Herzschuh, U., Nürnberg, D., Harms, L., & Stoof-Leichsenring, 
 It contains all necessary files and scripts for reproducing the results presented in the manuscript.
 
 ## Raw sequencing data
-The raw sequencing data are stored in the European Nucleotide Archive in (Bioproject number PRJEB66201).
+The raw sequencing data are stored in the European Nucleotide Archive (Bioproject number PRJEB66201).
 
 ## Taxonomic classification with ObiTools
-We used the Python package [OBITools 3.0.1](https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12428) to analyze the raw paired-end sequencing data of the amplicon-sequencing of the rbcL gene of diatoms. It merges paired-end reads, demultiplexes samples, and performs the taxonomic classification based on sequence similarity to the customized rbcL-EMBL nucleotide reference database `rbcl_embl143_db.fasta`.
+We used the Python package [OBITools 3.0.1](https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12428) to analyze the raw paired-end sequencing data of the amplicon sequencing of the rbcL gene of diatoms. It merges paired-end reads, demultiplexes samples, and performs the taxonomic classification based on sequence similarity to the customized rbcL-EMBL nucleotide reference database `rbcl_embl143_db.fasta`.
 Before running the ObiTools script `Obitools_APMG_41_embl143_rbcL.sh`, the follwoing adjustments have to be made to the  `rbcl_embl143_db.fasta` file:
 
 ```
@@ -30,7 +30,7 @@ The following adjustments have to be made in the script `Obitools_APMG_41_embl14
 ```
 
 ```
-# change oath to the directory where the output has to be saved
+# change path to the directory where the output will be saved
 DMS_OUT=/path/to/results/
 ```
 
@@ -40,7 +40,7 @@ DATAPATH=/path/to/raw/data
 ```
 
 ```
-# change to path to where rbcL database is saved
+# change path to where rbcL database is saved
 cp -r /path/to/embl143_rbcl.obidms /tm
 ```
 
@@ -49,17 +49,16 @@ cp -r /path/to/embl143_rbcl.obidms /tm
 
 ### Input
 As an input, the diatom amplicon sequencing data after taxonomic assignment through the [ObiTools Pipeline](https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12428) are used.
-The raw data and the ObiTools script are stored here (add link to data repository).
 
 The folder `input_files` contains the following files: <br>
 
 |file name|description|
 |-|-|
-|APMG-41_embl143_rbcL.xlsx|tabel of amplicon sequencing data after taxonomic assignment using the ObiTools pipeline|
-|AVS_to_Genus_info.xlsx|table assigning every ASV to a diatom genus|
-|Age_Period_Group.xlsx|table that assigns sample ages to a period (Holocene, Youger Dryas, Bollong-Allerod, Last Glacial Maximum, Glacial period, Eemian)|
+|APMG-41_embl143_rbcL.xlsx|table of amplicon sequencing data after taxonomic assignment using the ObiTools pipeline|
+|AVS_to_Genus_info.xlsx|table assigning all ASVs to a diatom genus|
+|Age_Period_Group.xlsx|table that assigns sample ages to a period (Holocene, Youger Dryas, Bolling-Allerod, Last Glacial Maximum, Glacial period, Eemian)|
 |Envi_for_RDA.xlsx|Input for the RDA, including d18O NGRIP data from [Rasmussen et al. 2006](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2005JD006079) and zooplankton data from [shotgun analysis](https://github.com/StellaZBuchwald/Bering_Sea_Plankton_Sequencing/tree/main/Shotgun)|
-|Not_Bacillariophyceae.txt|all taxa not representing Bacillariophyceae in the raw data for diatoms for inital filtering|
+|Not_Bacillariophyceae.txt|all taxa not representing Bacillariophyceae in the raw data for inital filtering|
 |Sample_names.xlsx|table assigning sample names after sequencing to sample age|
 |Shape_info.xlsx|table assigning main ASVs to centric or pennate shape|
 
@@ -78,7 +77,7 @@ The R script is structured into several sections:
 <li> Rarefaction <br>
   &emsp;&emsp;&emsp;&emsp;Rarefaction on ASV level <br>
   &emsp;&emsp;&emsp;&emsp;Mean ASVs per sample <br>
-   &emsp;&emsp;&emsp;&emsp;Mean counts oer ASV and sample <br>
+   &emsp;&emsp;&emsp;&emsp;Mean counts per ASV and sample <br>
 <li> Stratigrams
 <li> PCA/RDA
 
@@ -88,7 +87,7 @@ As long as all necessary input files are created already, each of the sections c
 
 For the `Rarefaction`, the R script by [Stefan Kruse](https://github.com/StefanKruse/R_Rarefaction) was adapted.
 
-For running the script, the following libraries in R must be installed:
+For running the script, the following libraries must be installed in R:
 <li> tidyverse
 <li> readxl
 <li> openxlsx
