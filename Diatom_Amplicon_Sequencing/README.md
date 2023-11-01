@@ -1,4 +1,4 @@
-# Code for Diatom Amplicon sequencing
+# Code for diatom amplicon sequencing
 
 This directory contains the code for filtering, processing and analyzing diatom amplicon sequencing data from a marine sediment core from the Bering Sea for the manuscript:
 Buchwald, S. Z., Herzschuh, U., Nürnberg, D., Harms, L., & Stoof-Leichsenring, K. R. Plankton community changes during the last 124 000 years in the subarctic Bering Sea derived from sedimentary ancient DNA. <br>
