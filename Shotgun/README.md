@@ -10,7 +10,7 @@ The raw sequencing data are stored in the European Nucleotide Archive (Bioprojec
 ## Taxonomic classification with Kraken2
 ### data preparation
 Two different sets of samples were sent for shotgun sequencing, resulting in two separate raw data files and two files after the taxonomic assignment with Kraken2. 
-The raw data and the Kraken2 script are stored [here](https://github.com/StellaZBuchwald/Bering_Sea_Plankton_Sequencing/tree/main/Shotgun/Kraken2).
+The Kraken2 script is stored [here](https://github.com/StellaZBuchwald/Bering_Sea_Plankton_Sequencing/tree/main/Shotgun/Kraken2).
 Before taxonomic classification with [Kraken2](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown) [Wood et al. 2019](https://www.biorxiv.org/content/10.1101/762302v1), the raw sequencing data were quality checked using the software FastQC (version 0.11.9), and read duplicates were removed with the program BBmap (version 38.87). For adapter trimming and merging of overlapping reads Fastp (version 0.20.1) was used and the quality of the processed reads was checked again.
 These processes are carried out if the script `1_step_shop_Bering_with_clumpify.sl` is run with the following adjustments:
 
@@ -25,7 +25,7 @@ INDIR=path/to/raw/shotgun/data
 ```
 
 ### Kraken2 Script
-On the quality checked and deduplicated dataset, the Kraken2 script `2_step_shop_Bering.sh` can be run. The following adjustments have to me made to the script:
+On the quality checked and deduplicated dataset, the Kraken2 script `2_step_shop_Bering.sh` can be run. The following adjustments have to be made to the script:
 
 ```
 # give the email address for notifications
@@ -33,7 +33,7 @@ On the quality checked and deduplicated dataset, the Kraken2 script `2_step_shop
 ```
 
 ```
-# change directory to the path where the database is stores
+# change directory to the path where the database is stored
 DB="/path/to/nt_2021_04_db"
 ```
 
@@ -43,10 +43,10 @@ The output directory will stay the same to the output directory for the script `
 
 ## Ancient pattern analysis with HOPS
 For the analysis of ancient pattern in the DNA sequences, we used the HOPS pipeline ([Hübler et al. 2019](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1903-0)). Scripts and input files can be found in the folder `HOPS`. For creating the database and further information, click [here](https://github.com/rhuebler/HOPS).
-We analyzed ancient DNA pattern for different taxa, summarized in the `taxalist.txt`.
+We analyzed ancient DNA patterns for different taxa, summarized in the `taxalist.txt`.
 
 
-We analyszed ancient DNA pattern for six time intervals (ds01-ds06) and samples were grouped accordingly using the `cat` command:
+We analyszed ancient DNA patterns for six time intervals (ds01-ds06) and samples were grouped accordingly using the `cat` command:
 
 |sample age (ka BP) |time interval||sample age (ka BP)|time interval||sample age (ka BP)|time interval|
 |-|-|-|-|-|-|-|-|
@@ -68,7 +68,7 @@ We analyszed ancient DNA pattern for six time intervals (ds01-ds06) and samples 
 
 
 
-Both, the `taxalist.txt` and the `configfile.txt` have to be stored in the working directory that has to be indicated in the script `03_hops_nt_KL77_ds01.sh` and the `configfile.txt`.
+Both the `taxalist.txt` and the `configfile.txt` have to be stored in the working directory that has to be indicated in the script `03_hops_nt_KL77_ds01.sh` and the `configfile.txt`.
 For running the script, the following modifications have to be made to the `configfile.txt`:
 
 ```
@@ -99,7 +99,7 @@ TAXFILE=path/to/working/directory/taxalist_2022_09_20.txt
 ```
 
 ```
-# set directory to database in the following lines
+# set directory to the database in the following lines
 INDEXDB=/path/to/database/nt-hops-20-11-03_step8/
 NCBIRESC=/path/to/database/ncbi
 ```
@@ -115,20 +115,20 @@ The folder `input_files` contains the following files: <br>
 
 |file name|description|
 |-|-|
-|Age_Period_Group.xlsx|table that assigns sample ages to a period (Holocene, Youger Dryas, Bollong-Allerod, Last Glacial Maximum, Glacial period, Eemian)|
+|Age_Period_Group.xlsx|table assigning sample ages to a period (Holocene, Youger Dryas, Bolling-Allerod, Last Glacial Maximum, Glacial period, Eemian)|
 |Group_infos_phyto.xlsx|table assigning the phytoplankton families to broader taxonomic groups (chlorophyes, phototrophic bacteria, phototrophic protsits, red algae)|
-|Group_infos_zoo.xlsx|table assigning the zooplankton families to broader taxonomic groups (crustaceous zooplankton, gelatinous zooplankton, heterotrophic protsits)|
+|Group_infos_zoo.xlsx|table assigning the zooplankton families to broader taxonomic groups (crustaceous zooplankton, heterotrophic protsits, gelatinous zooplankton)|
 |KL-77-1_nt0.2_lineageDB_age_depth_adj.xlsx|Kraken2 Output of the first batch sent to sequencing|
-|KL77-2_nt0.2_lineageDB_age_depth_adj.xlsx|Kraken2 Output of the first batch sent to sequencing|
+|KL77-2_nt0.2_lineageDB_age_depth_adj.xlsx|Kraken2 Output of the second batch sent to sequencing|
 |NGRIP_data.xlsx|d18O NGRIP data from [Rasmussen et al. 2006](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2005JD006079)|
-|Phytoplankton_Family_Genus_Species.xlsx|table assigning each plankton species to a family|
+|Phytoplankton_Family_Genus_Species.xlsx|table assigning each phytoplankton plankton species to a family|
 |phyto_families.txt|phytoplankton families that the raw data are filtered for|
 |zoo_families.txt|zooplankton families that the raw data are filtered for|
 ---
 
 ### R script
 
-For running the R script `Bering_Sea2023_Shotgun.R` the working directory in the first row must be customitzed to a directory which contains a folder with the `Input_files`.
+For running the R script `Bering_Sea2023_Shotgun.R` the working directory in the first row must be customized to a directory which contains a folder with the `Input_files`.
 In this directory, an `Output` folder will be created if it doesn't exist alerady. The `output` is included in `.gitignore` to avoid it being pushed into the repository.
 
 The R script is structured into several sections:
@@ -156,7 +156,7 @@ As long as all necessary input files are created already, each of the sections c
 For the `Rarefaction`, the R script by [Stefan Kruse](https://github.com/StefanKruse/R_Rarefaction) was adapted.
 
 
-For running the script, the following libraries in R must be installed:
+For running the script, the following libraries must be installed in R:
 <li> tidyverse
 <li> scales
 <li> readxl
