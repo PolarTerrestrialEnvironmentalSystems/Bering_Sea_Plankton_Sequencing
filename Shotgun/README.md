@@ -1,11 +1,11 @@
 # Code for Bering Sea Shotgun sequencing
 
 This directory contains the code for filtering, processing and analyzing shotgun sequencing data from a marine sediment core from the Bering Sea for the manuscript:
-Plankton community change during the last 124 000 years in the subarctic Bering Sea derived from sedimentary ancient DNA (add link after publication) <br>
+Buchwald, S. Z., Herzschuh, U., Nürnberg, D., Harms, L., & Stoof-Leichsenring, K. R. Plankton community changes during the last 124 000 years in the subarctic Bering Sea derived from sedimentary ancient DNA <br>
 It contains all necessary `input_files` and the scripts for replicating the results presented in the manuscript.
 
 ## Raw sequencing data
-The raw sequencing data are stored in the European Nucleotide Archive in bioproject XXX (add when raw data are uploaded).
+The raw sequencing data are stored in the European Nucleotide Archive (Bioproject number PRJE866300).
 
 ## Taxonomic classification with Kraken2
 ### data preparation
