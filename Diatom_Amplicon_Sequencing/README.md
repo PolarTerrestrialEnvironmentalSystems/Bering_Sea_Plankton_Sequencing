@@ -1,11 +1,11 @@
 # Code for Diatom Amplicon sequencing
 
 This directory contains the code for filtering, processing and analyzing diatom amplicon sequencing data from a marine sediment core from the Bering Sea for the manuscript:
-Plankton community change during the last 124 000 years in the subarctic Bering Sea derived from sedimentary ancient DNA (add link after publication) <br>
+Buchwald, S. Z., Herzschuh, U., Nürnberg, D., Harms, L., & Stoof-Leichsenring, K. R. Plankton community change during the last 124 000 years in the subarctic Bering Sea derived from sedimentary ancient DNA <br>
 It contains all necessary files and scripts for reproducing the results presented in the manuscript.
 
 ## Raw sequencing data
-The raw sequencing data are stored in the European Nucleotide Archive in bioproject XXX (add when raw data are uploaded).
+The raw sequencing data are stored in the European Nucleotide Archive in (Bioproject number PRJEB66201).
 
 ## Taxonomic classification with ObiTools
 We used the Python package [OBITools 3.0.1](https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12428) to analyze the raw paired-end sequencing data of the amplicon-sequencing of the rbcL gene of diatoms. It merges paired-end reads, demultiplexes samples, and performs the taxonomic classification based on sequence similarity to the customized rbcL-EMBL nucleotide reference database `rbcl_embl143_db.fasta`.
